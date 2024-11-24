@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0;
+}
+
+.header {
+    background: url("images/header.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 70px;
+}
+
+.header>h1 {
+    font-size: 30px;
+    font-weight: 550;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.main {
+    align-items: normal;
+    justify-content: left;
+    display: flex;
+}
+
+.content {
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.article>h1 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.article>p {
+    font-size: 18px;
+    color: #333333;
+    margin-top: 7px;
+    padding-right: 85px;
+    width: 900px;
+}
+
+button {
+    background-color: white;  
+    border: 2px solid #ff463e;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #ff463e;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #ff463e;
+    color: white;
+    cursor: pointer;
+}
+
+aside {
+    padding-top: 70px;
+}
+
+.asideimg img {
+    width: 385px;
+    height: 200px;
+}
+
+aside>h1 {
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+aside>p {
+    padding-bottom: 30px;
+}
+
+

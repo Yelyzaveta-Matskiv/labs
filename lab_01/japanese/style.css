@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(images/dark-wood.jpg);
+}
+
+header {
+    background-image: url(images/header-page.jpg);
+    background-size: contain;
+    width: 1300px;
+    height: 200px;
+    margin-left: 250px;
+}
+
+header>h1 {
+    font-size: 70px;
+    margin-left: 800px;
+    padding-top: 50px;
+}
+
+main {
+    background-color: white;
+    width: 1300px;
+    margin-left: 250px;
+}
+
+nav {
+    background-image: url(images/header-page.jpg);
+    border: 3px solid rgb(72, 51, 35);
+    width: 1295px;
+    margin-left: 250px;
+}
+
+nav>ul {
+    display: flex;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+nav>ul>li {
+    padding: 0px 30px;
+    list-style-type: none; 
+}
+
+a:link {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #111111;
+}
+
+article {
+    display: flex;
+    margin-bottom: 60px;
+    padding-top: 40px;
+    margin-left: 30px;
+}
+
+.image img {
+    width: 410px;
+    height: 250px;
+}
+
+figure {
+    border: 1px solid #e7e7e7;
+    padding: 7px;
+}
+
+figure>p {
+    font-family: "Lato", sans-serif;
+    color: #787878;
+}
+
+.blok {
+    padding-top: 20px;
+    margin-left: 35px;  
+}
+
+.blok>h2 {
+    font-size: 35px;
+    padding-bottom: 5px;
+    color: #616161;
+}
+
+.blok>h3 {
+    font-size: 25px;
+    padding-bottom: 13px;
+    color: #ffcb22;
+}
+
+.blok>p {
+    font-size: 20px;
+    line-height: 25px;
+    color: #787878;
+}
+
+aside {
+    width: 400px;
+    height: 500px;
+    padding-left: 50px;
+}
+
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+}
+
+.popular_recipes>h2 {
+    font-size: 35px;
+    width: 50px;
+    color: #ff005f;
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+.popular_recipes {
+    width: 365px;
+    height: 775px;
+    border: 1px solid  #e7e7e7;
+    margin-left: 40px;
+}
+
+.recipes>li {
+    list-style-type: none;
+    padding: 20px 0px;
+    width: 150px;
+    padding-left: 50px;
+}
+
+hr {
+    margin-left: 30px;
+    width: 220px;
+    border: 1px solid #e7e7e7;
+}
+
+footer {
+    background-color: #989898;
+    color: white;
+    text-align: center;
+    height: 30px;
+    width: 1300px;
+    margin-left: 250px;
+    padding-top: 10px;
+}
