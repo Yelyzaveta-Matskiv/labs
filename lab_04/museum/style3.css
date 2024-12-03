@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 200px;
+}
+
+.header_image {
+    background-image: url(images/Rectangle.jpg);
+    width: 1200px;
+    height: 1600px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+header {
+    font-family: "Big Shoulders Display";
+    font-size: 60px;
+    position: relative;
+}
+
+header h1 {
+    font-weight: 800;
+    font-size: 200px;
+    width: 900px;
+    right: 200px;
+}
+
+header p {
+    font-family: "Outfit";
+    font-size: 50px;
+    font-weight: 400;
+    width: 800px;
+}
+
+.header_right{
+    position: relative;
+    right: 1700px;
+    top: 200px;
+    color: white;
+}
+
+.header_left {
+    position: relative;
+    color: black;
+    left: 1600px;
+}
+
+.header_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black {
+    background-color: black;
+    width: 1100px;
+    height: 1600px;
+    background-position: center;
+    background-size: cover;
+}
+
+.large_flex {
+    display: flex;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 200px;
+    cursor: pointer;
+    font-size: 50px;
+    font-family: "Big Shoulders Display";
+}
+
+.image_1 {
+    width: 1300px;
+    height: 800px;
+}
+
+article {
+    font-family: "Big Shoulders Display";
+    font-size: 90px;
+}
+
+article h1 {
+    font-weight: 800;
+    margin: 40px;
+    line-height: 120px;
+    float: left;
+    width: 900px;
+    margin-top: 330px;
+}
+
+article p {
+    font-family: "Outfit";
+    font-size: 30px;
+    width: 600px;
+    margin: 40px;
+    font-weight: 300;
+    margin-top: 5px;
+    float: left;
+}
+
+.image_2 {
+    width: 1400px;
+    height: 1600px;
+}
+
+.image_3 {
+    width: 950px;
+    height: 700px;
+    
+}
+
+.ending {
+    background-color: black;
+    color: white;
+    width: 950px;
+    height: 800px;
+    padding-left: 30px;
+    float: right;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 300px;
+    margin-top: 100px;
+    padding-left: 80px;
+    padding-bottom: 70px;
+}
+
+.footer_flex {
+    display: flex;
+}
+
+footer h5 {
+    font-family: "Big Shoulders Display";
+    font-weight: 900;
+    font-size: 200px;
+}
+
+footer p {
+    font-family: "Outfit";
+    font-size: 50px;
+    margin-left: 300px;
+}
+
+.icons {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 300px;
+    margin-top: 100px;
+}
+
+.icon_1 {
+    height: auto;
+    margin-left: 10px;
+    width: 60px;
+}
+
+.icons {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 300px;
+    margin-top: 100px;
+}
+
+.icon_2 {
+    height: auto;
+    margin-left: 40px;
+    width: 60px;
+}
+
+.icon_3 {
+    height: auto;
+    margin-left: 40px;
+    width: 60px;
+
+}
