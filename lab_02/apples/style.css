@@ -125,6 +125,22 @@ a:link {
     margin-left: 40px;
 }
 
+.button2 {
+    width: 70px;
+    height: 30px;
+    color: white;
+    border: 3px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-left: 600px;
+}
+
+.name {
+    color: white;
+    margin-top: 210px;
+    margin-left: 20px;
+}
+
 .section_1>p {
     color: #000000;
     float: right;
