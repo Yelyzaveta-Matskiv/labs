@@ -1,0 +1,60 @@
+body {
+    color: #848484;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container h1 {
+    font-size: 24px;
+    margin-left: 350px;
+    color: #ab9b85
+}
+
+.image {
+    margin-left: 200px;
+}
+
+.image img {
+    max-width: 400px;
+}
+
+.toys-details {
+    margin-top: 10px;
+}
+
+.toys-details h2 {
+    color:  #ab9b85;
+    margin-left: 350px;
+}
+
+.toys-details table {
+    width: 100%;
+}
+
+.toys-details th, .toys-details td {
+    border: 3px solid  #ab9b85;
+    padding: 10px;
+    text-align: left;
+    color: #ab9b85;
+}
+
+.back-link {
+    margin-top: 20px;
+    display: block;
+    color: #fef9f9;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #ab9b85;
+    margin-left: 350px;
+    width: 100px;
+    text-align: center;
+}
+
+.back-link:hover {
+    color:  #716657;
+}
