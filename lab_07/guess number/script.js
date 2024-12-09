@@ -5,11 +5,21 @@ function startGame() {
     }
 }
 
-let balance = 100;
-let randomNumber = Math.floor(Math.random() * 6);
-console.log("Random Number:", randomNumber);
+function askToRestartGame() {
+    let restart = confirm("Start new game?");
+    if (restart) {
+         startGameLoop();
+    } else {
+        alert("Game cancelled");
+    }
+}
 
-for (let attempt = 0; attempt < 3; attempt++) {
+function startGameLoop() {
+    let balance = 100;
+    let randomNumber = Math.floor(Math.random() * 6);
+    console.log("Random Number:", randomNumber);
+
+    for (let attempt = 0; attempt < 3; attempt++) {
     let givenNumber = prompt(`Guess the Number\nCurrent balance: ${balance}$`);
     console.log("Given Number:", givenNumber);
 
@@ -27,8 +37,7 @@ for (let attempt = 0; attempt < 3; attempt++) {
             alert(`Incorrect! Remaining attempts: ${2 - attempt}.`);
         }
     }
+  }
+    askToRestartGame();
 }
-    
-giveFeedback (attempt, balance, randomNumber)
-
-startGame ()
+startGameLoop();
