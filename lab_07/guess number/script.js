@@ -1,45 +1,34 @@
 function startGame() {
-    if (!confirm("Start new game\nCurrent balance: 100$")) {
-        alert("Game canceled");
+    if(!confirm("Start new game\nCurrent balance: 100$")) {
+        alert ("Game cancelled")
         return;
     }
+}
 
-    let balance = 100;
-    const randomNumber = generateRandomNumber(6);
-    console.log("Random Number:", randomNumber);
+let balance = 100;
+let randomNumber = Math.floor(Math.random() * 6);
+console.log("Random Number:", randomNumber);
 
-    for (let attempt = 1; attempt <= 3; attempt++) {
-        const givenNumber = prompt(`Guess the Number\nCurrent balance: ${balance}$`);
-        console.log("Given Number:", givenNumber);
+for (let attempt = 0; attempt < 3; attempt++) {
+    let givenNumber = prompt(`Guess the Number\nCurrent balance: ${balance}$`);
+    console.log("Given Number:", givenNumber);
 
-        if (isCorrectGuess(givenNumber, randomNumber)) {
-            alert("Wow you won!");
-            break;
-            
+    if (parseInt(givenNumber) === randomNumber) {
+        let reward = (3 - attempt) * 10 + 20; 
+        balance += reward;
+        alert(`Wow you won! Your reward - ${reward}$. Updated balance: ${balance}$`);
+        break;
+
+    } else {
+        balance -= 10;
+        if (attempt === 2) {
+            alert(`Game over! The number was ${randomNumber}. Final balance: ${balance}$`);
         } else {
-            balance -= 10;
-            giveFeedback(attempt, balance, randomNumber);
+            alert(`Incorrect! Remaining attempts: ${2 - attempt}.`);
         }
     }
 }
-
-function generateRandomNumber(range) {
-    return Math.floor(Math.random() * range);
-}
-
-function isCorrectGuess(userInput, correctNumber) {
-    return parseInt(userInput) === correctNumber;
-}
-
-function giveFeedback(attempt, correctNumber) {
-    if (attempt === 3) {
-        alert("Oh no, game over! Try again");
-    } else {
-        alert("Incorrect!");
-    }
-}
-
-startGame();
-
-
     
+giveFeedback (attempt, balance, randomNumber)
+
+startGame ()
